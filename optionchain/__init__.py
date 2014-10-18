@@ -5,7 +5,7 @@
 """
 
 
-__version__ = "0.1"
+__version__ = "0.1.1"
 __app_name__ = "python-google-option-chain"
 __description__ = "Python wrapper for getting data from Google's finance option chain"
 __author__ = "Mark Allan B Meriales"

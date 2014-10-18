@@ -38,8 +38,12 @@ class OptionChain(object):
                 params['expy'] = exp['y']
 
                 new_data = self._get_content(OPTION_CHAIN_URL, params)
-                calls += new_data['calls']
-                puts += new_data['puts']
+
+                if new_data.get('calls') is not None:
+                    calls += new_data.get('calls')
+
+                if new_data.get('puts') is not None:
+                    puts += new_data.get('puts')
 
         self.calls = calls
         self.puts = puts
